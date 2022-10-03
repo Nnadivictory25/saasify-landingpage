@@ -4,9 +4,8 @@
 
 .ourTopCustomers {
   &__container {
-    width: 70%;
     white-space: nowrap;
-    // overflow: hidden;
+    overflow: hidden;
 
     @include breakpoint-down(medium) {
       white-space: nowrap;
@@ -23,7 +22,6 @@
         list-style: none;
         height: 100%;
         display: flex;
-        overflow: hidden;
         animation: scrolling var(--marquee-animation-duration) linear infinite;
       }
       /* .marquee-content:hover {
@@ -47,7 +45,7 @@
         flex-shrink: 0;
         width: var(--marquee-element-width);
         max-height: 100%;
-        font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+        // font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
         white-space: nowrap;
       }
 
