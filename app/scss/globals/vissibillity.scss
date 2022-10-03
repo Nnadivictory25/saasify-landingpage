@@ -1,5 +1,6 @@
 @use '../util/breakpoints.scss' as *;
 @use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
 
 .hide-for-mobile {
     // hide for tablet and mobile 
@@ -14,3 +15,7 @@
         display: none !important;
     }
 } 
+
+.padding-sides {
+    @include padding;
+}

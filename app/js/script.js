@@ -3,6 +3,8 @@ const toggleMenu = document.querySelectorAll('.toggle-menu')
 const menu = document.querySelector('.mobileNav')
 const openIcon = document.querySelector('#open')
 const closeIcon = document.querySelector('#close')
+const headerText = document.querySelector('.animate-text')
+const h2ctn = document.querySelector('.h2Ctn')
 
 
 toggleMenu.forEach(button => {
@@ -36,3 +38,21 @@ if (screen.width <= 639) {
       marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
     }
 }
+
+let randomNumber = (arr) => {
+    return Math.floor(Math.random() * arr.length); // function to get a random number in regards to the arr length passed into it
+}
+
+const wordArray = ['analysis', 'tracking', 'management']
+
+let getWord = () => {
+    h2ctn.innerHTML = ''
+    h2ctn.innerHTML += `
+    <h2 class="flex flex-col items-center text-3xl font-bold heroSection__header">The fastest way for startups to do any <span class="animate-text fade-in-text">${wordArray[randomNumber(wordArray)]}</span></h2>
+    
+    `
+}
+
+getWord()
+
+setInterval(getWord, 5000)

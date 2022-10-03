@@ -1,86 +1,83 @@
-@use '../util/breakpoints.scss' as *;
-@use '../util/functions.scss' as *;
-@use '../util/mixins.scss' as *;
+@use "../util/breakpoints.scss" as *;
+@use "../util/functions.scss" as *;
+@use "../util/mixins.scss" as *;
 
 .heroSection {
-    position: relative;
-    color: #fff;
-    background: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
-    height: 140vh;
-    @include breakpoint-down(small) {
-        height: 600px;
-    }
-    
+  position: relative;
+  color: #fff;
+  background: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
+  height: 140vh;
+  @include breakpoint-down(small) {
+    height: 600px;
+  }
 
-    &__itemsContainer {
-        margin-top: rem(20);
+  &__itemsContainer {
+    margin-top: rem(20);
 
-        p {
-            max-width: rem(450);
-            margin: rem(20) auto;
-        }
-
-        .inputCtn {
-            max-width: 400px;
-            text-align: center;
-            position: relative !important;
-            margin: 0 auto;
-            z-index: 8;
-            
-
-            i {
-                position: absolute;
-                @include breakpoint-down(small) {
-                    left: 17px;
-                    top: 15px;
-                }
-                left: 20px;
-                top: 17px;
-                color: black;
-            }
-
-            input {
-                position: relative;
-                padding: rem(20) 0 rem(20) rem(60);
-                @include breakpoint-down(small) {
-                    padding-left: 50px;
-                    font-size: .8rem;
-                }
-                border-radius: 50px;
-                color: black !important;
-                width: 100%;
-            }
-
-            button {
-                position: absolute;
-                right: 15px;
-                top: 10px;
-                @include breakpoint-down(small) {
-                    font-size: .85rem;
-                    right: 7px;
-                }
-                background: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
-                border-radius: 50px;
-            }
-
-        }
+    p {
+      max-width: rem(450);
+      margin: rem(20) auto;
     }
 
-    .imgCtn {
-        margin: 0 auto;
-        text-align: center;
+    .inputCtn {
+      max-width: 400px;
+      text-align: center;
+      position: relative !important;
+      margin: 0 auto;
+      z-index: 8;
 
-        img {
-            text-align: center;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            bottom: rem(-110);
-            @include breakpoint-down(medium) {
-                width: 110%;
-            }
-            width: 70%;
-            position: absolute;
+      i {
+        position: absolute;
+        @include breakpoint-down(small) {
+          left: 17px;
+          top: 15px;
         }
+        left: 20px;
+        top: 17px;
+        color: black;
+      }
+
+      input {
+        position: relative;
+        padding: rem(20) 0 rem(20) rem(60);
+        @include breakpoint-down(small) {
+          padding-left: 50px;
+          font-size: 0.8rem;
+        }
+        border-radius: 50px;
+        color: black !important;
+        width: 100%;
+      }
+
+      button {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        @include breakpoint-down(small) {
+          font-size: 0.85rem;
+          right: 7px;
+        }
+        background: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
+        border-radius: 50px;
+      }
     }
+  }
+
+  .imgCtn {
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      text-align: center;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: rem(-110);
+      @include breakpoint-down(medium) {
+        width: 110%;
+      }
+      width: 70%;
+      position: absolute;
+    }
+  }
 }

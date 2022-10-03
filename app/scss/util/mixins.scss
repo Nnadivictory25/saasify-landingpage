@@ -2,4 +2,8 @@
 @use '../util/functions.scss' as *;
 
 // This is where mixins will be created . 
+@mixin padding {
+    padding-right: 27px;
+    padding-left: 27px;
+}
 

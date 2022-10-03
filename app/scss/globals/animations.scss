@@ -49,3 +49,23 @@
       transform: translateX(-100%);
     }
   }
+
+  @keyframes fade-in-text {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fade-in-text {
+    animation: fade-in-text 800ms ease-in-out  forwards;
+}
+.animate-text {
+    transform: translateY(-15px);
+    display: inline-block;
+}

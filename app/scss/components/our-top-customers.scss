@@ -3,6 +3,7 @@
 @use "../util/mixins.scss" as *;
 
 .ourTopCustomers {
+    margin-bottom: rem(30);
   &__container {
     white-space: nowrap;
     overflow: hidden;
@@ -53,6 +54,11 @@
         width: 100%;
         /* height: 100%; */
       }
+    }
+
+    @include breakpoint-up(large) {
+        width: 80%;
+        margin: 0 auto;
     }
   }
 }

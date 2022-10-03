@@ -1,6 +1,7 @@
 // removing the default padding of html headings ..
 h1, h2, h3 {
     margin-top: 0;
+    display: block;
 }
 
 // removing the default link styles
@@ -27,3 +28,4 @@ input:focus {
 .d-none {
     display: none;
 }
+
