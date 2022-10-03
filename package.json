@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "autoprefixer": "^10.4.12",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.13",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.55.0"
+  },
+  "name": "saasify-landingpage",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

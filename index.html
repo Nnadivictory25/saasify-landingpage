@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saasify | Home</title>
+
+          <!-- custom stylesheet + script -->
+   <link rel="stylesheet" href="/dist/style.css">
+   <script defer src="/dist/script.js"></script>
+
+  <!-- favicon img -->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <main>
+
+        <section class="heroSection">
+            <nav class="p-8 hide-for-desktop">
+                <ul class="heroSection__navbarCtn hide-for-desktop flex justify-between items-center">
+                    <li class="heroSection__navbarCtn--item">
+                        <div class="font-bold text-xl logo">SAASIFY</div>
+                    </li>
+                    <li class="heroSection__navbarCtn--item">
+                        <i id="open" class="text-2xl bi bi-list toggle-menu"></i>
+                        <i id="close" class="text-2xl bi bi-x-lg d-none toggle-menu"></i>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="heroSection__desktopNav hide-for-mobile flex justify-between p-8 items-center">
+                <div class="font-bold logo text-2xl">SAASIFY</div>
+                <div class="heroSection__desktopNav--listItems ">
+                    <ul class="flex space-x-8">
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="customer">Customer</a></li>
+                        <li><a href="pricing">Pricing</a></li>
+                        <li><a href="aboutus">About us</a></li>
+                    </ul>
+                </div>
+                <button class="rounded-md  border-transparent bg-white py-3 px-8 text-black font-semibold">Sign Up</button>
+            </div>
+
+            <div class="heroSection__mobileNav hide-for-desktop mobileNav">
+                <ul class="p-8 flex flex-col gap-y-5 text-center">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="customer">Customer</a></li>
+                    <li><a href="pricing">Pricing</a></li>
+                    <li><a href="aboutus">About us</a></li>
+                    <li class="rounded-md  border-transparent bg-white py-3 px-8 text-black font-semibold"><a href="">Sign Up</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="heroSection__itemsContainer text-center px-7 py-5 mb-8 capitalize">
+                <h2 class="text-3xl font-bold heroSection__header">The fastest way for startups to do any analysis</h2>
+                <p class="heroSection__decription">Equals is the only spreadsheet with built-in connections to any database, versioning, and collaboration.</p>
+                <div class="inputCtn">
+                    <input placeholder="Enter your email" type="text">
+                    <i class="text-2xl bi bi-envelope"></i>
+                    <button class="py-2 px-6">Start for free</button>
+                </div>
+            </div>
+
+
+
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 290" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#fff" d="M0,261L80,227.2C160,193,320,126,480,111.2C640,97,800,135,960,135.3C1120,135,1280,97,1440,72.5C1600,48,1760,39,1920,48.3C2080,58,2240,87,2400,125.7C2560,164,2720,213,2880,217.5C3040,222,3200,184,3360,145C3520,106,3680,68,3840,67.7C4000,68,4160,106,4320,125.7C4480,145,4640,145,4800,120.8C4960,97,5120,48,5280,29C5440,10,5600,19,5760,24.2C5920,29,6080,29,6240,62.8C6400,97,6560,164,6720,174C6880,184,7040,135,7200,116C7360,97,7520,106,7680,111.2C7840,116,8000,116,8160,96.7C8320,77,8480,39,8640,43.5C8800,48,8960,97,9120,130.5C9280,164,9440,184,9600,178.8C9760,174,9920,145,10080,125.7C10240,106,10400,97,10560,101.5C10720,106,10880,126,11040,135.3C11200,145,11360,145,11440,145L11520,145L11520,290L11440,290C11360,290,11200,290,11040,290C10880,290,10720,290,10560,290C10400,290,10240,290,10080,290C9920,290,9760,290,9600,290C9440,290,9280,290,9120,290C8960,290,8800,290,8640,290C8480,290,8320,290,8160,290C8000,290,7840,290,7680,290C7520,290,7360,290,7200,290C7040,290,6880,290,6720,290C6560,290,6400,290,6240,290C6080,290,5920,290,5760,290C5600,290,5440,290,5280,290C5120,290,4960,290,4800,290C4640,290,4480,290,4320,290C4160,290,4000,290,3840,290C3680,290,3520,290,3360,290C3200,290,3040,290,2880,290C2720,290,2560,290,2400,290C2240,290,2080,290,1920,290C1760,290,1600,290,1440,290C1280,290,1120,290,960,290C800,290,640,290,480,290C320,290,160,290,80,290L0,290Z"></path></svg>
+            
+            <div class="imgCtn">
+                <img src="/images/Group 33603.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="ourTopCustomers pt-8 my-8 px-8 ">
+            <div class="ourTopCustomers__container marquee ">
+                <ul class="space-x-8 my-8 pt-8 flex   items-center justify-between marquee-content">
+                    <li><img src="/images/image 8.svg" alt=""></li>
+                    <li><img src="/images/image 7.svg" alt=""></li>
+                    <li><img src="/images/image 3.svg" alt=""></li>
+                    <li><img src="/images/image 4.svg" alt=""></li>
+                    <li><img src="/images/image 5.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+</html>

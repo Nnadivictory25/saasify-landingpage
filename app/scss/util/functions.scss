@@ -1,0 +1,10 @@
+@use "sass:math"; // using the default sass:math module to create a function that automatically converts px -> rem 
+
+// usage: .... eg: || padding : rem(20) ; 
+// the above code will be converted to rem when compiled
+
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+  @return math.div($pixels, $context) * 1rem;
+}

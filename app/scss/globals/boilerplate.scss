@@ -1,0 +1,20 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    list-style: none;
+    // outline: 1px solid red; // (For css debugging :) )
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    background-color: var(--white);
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}

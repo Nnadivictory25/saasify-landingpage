@@ -1,0 +1,16 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+.hide-for-mobile {
+    // hide for tablet and mobile 
+    @include breakpoint-down(medium){
+        display: none !important;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport width
+    @include breakpoint-up(large) {
+        display: none !important;
+    }
+} 

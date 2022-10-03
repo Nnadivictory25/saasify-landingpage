@@ -1,0 +1,80 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.heroSection {
+    a {
+        color: #fff;
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .logo {
+        cursor: pointer;
+    }
+    
+    button:hover {
+        opacity: .8;
+    }
+
+    &__desktopNav--listItems {
+        li {
+            transition: all 200ms ease-in-out;
+            opacity: .8;
+        }
+        li:hover {
+            opacity: 1;
+            transform: scaleY(20px);
+        }
+    }
+
+    &__mobileNav {
+        position: absolute;
+        z-index: 99;
+        width: 90%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        border-radius: 8px;
+        visibility: hidden;
+        transition: all 1s ease-in-out;
+        box-shadow: 2px 5px 203px -33px rgba(250,239,239,0.75);
+        -webkit-box-shadow: 2px 5px 203px -33px rgba(250,239,239,0.75);
+        -moz-box-shadow: 2px 5px 203px -33px rgba(250,239,239,0.75);
+        background: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
+        
+        ul {
+            
+            li {
+                cursor: pointer;
+                transition: all 200ms ease-in-out;
+
+                &:not(:last-child) {
+                    opacity: .8;
+                }
+
+                &:hover {
+                    opacity: 1;
+                    transform: scaleY(20px);
+                }
+            }
+            li:last-child {
+                &:hover {
+                    opacity: .8;
+                }
+                a {
+                    color: black ;
+                }
+            }
+        }
+
+    }
+}

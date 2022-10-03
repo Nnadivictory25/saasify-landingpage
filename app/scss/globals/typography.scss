@@ -1,0 +1,29 @@
+// removing the default padding of html headings ..
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+// removing the default link styles
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 400ms ease-in-out;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.d-none {
+    display: none;
+}
