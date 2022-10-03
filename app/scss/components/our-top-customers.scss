@@ -16,30 +16,14 @@
         height: var(--marquee-height);
         background-color: #111;
         color: #eee;
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
-      }
-      .marquee:before,
-      .marquee:after {
-        position: absolute;
-        top: 0;
-        width: 10rem;
-        height: 100%;
-        content: "";
-        z-index: 1;
-      }
-      .marquee:before {
-        left: 0;
-        background: linear-gradient(to right, #111 0%, transparent 100%);
-      }
-      .marquee:after {
-        right: 0;
-        background: linear-gradient(to left, #111 0%, transparent 100%);
       }
       .marquee-content {
         list-style: none;
         height: 100%;
         display: flex;
+        overflow: hidden;
         animation: scrolling var(--marquee-animation-duration) linear infinite;
       }
       /* .marquee-content:hover {
