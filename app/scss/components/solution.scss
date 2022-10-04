@@ -1,0 +1,50 @@
+@use "../util/breakpoints.scss" as *;
+@use "../util/functions.scss" as *;
+@use "../util/mixins.scss" as *;
+
+.solution {
+    position: relative;
+    background-color: #F6F5FF;
+
+
+
+    &__container {
+        // outline: 1px solid black;
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+
+        @include breakpoint-up(large) {
+            padding-left: rem(50);
+            padding-right: rem(50);
+         }
+
+         .left {
+            button {
+                background: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
+                border-radius: 50px;
+                color: #fff;
+            }
+         }
+         
+
+        .right {
+            position: relative;
+            @include breakpoint-down(medium) {
+                width: 125%            }
+            img {
+                @include breakpoint-up(medium) {
+                    padding-top: rem(100);
+                }
+                padding-top: rem(50);
+                width: 110%;
+                @include breakpoint-down(medium) {
+                    width: 100%;
+                    margin: 20px 90px 0 0 ;
+                    transform: translateX(-30px);
+                }
+            }
+            width: 100%;
+        }
+    }
+}
