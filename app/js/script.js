@@ -1,58 +1,72 @@
-const body = document.querySelector('body')
-const toggleMenu = document.querySelectorAll('.toggle-menu')
-const menu = document.querySelector('.mobileNav')
-const openIcon = document.querySelector('#open')
-const closeIcon = document.querySelector('#close')
-const headerText = document.querySelector('.animate-text')
-const h2ctn = document.querySelector('.h2Ctn')
+const body = document.querySelector("body");
+const toggleMenu = document.querySelectorAll(".toggle-menu");
+const menu = document.querySelector(".mobileNav");
+const openIcon = document.querySelector("#open");
+const closeIcon = document.querySelector("#close");
+const headerText = document.querySelector(".animate-text");
+const h2ctn = document.querySelector(".h2Ctn");
 
-
-toggleMenu.forEach(button => {
-    button.addEventListener('click', () => {
-        if (menu.classList.contains('fade-in') && body.classList.contains('no-scroll')) {
-            menu.classList.remove('fade-in')
-            body.classList.remove('no-scroll')
-            menu.classList.add('fade-out')
-            closeIcon.classList.add('d-none')
-            openIcon.classList.remove('d-none')
-        } else {
-            menu.classList.remove('fade-out')
-            menu.classList.add('fade-in')
-            body.classList.add('no-scroll')
-            closeIcon.classList.remove('d-none')
-            openIcon.classList.add('d-none')
-        }
-    }) 
-})
-
+toggleMenu.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (
+      menu.classList.contains("fade-in") &&
+      body.classList.contains("no-scroll")
+    ) {
+      menu.classList.remove("fade-in");
+      body.classList.remove("no-scroll");
+      menu.classList.add("fade-out");
+      closeIcon.classList.add("d-none");
+      openIcon.classList.remove("d-none");
+    } else {
+      menu.classList.remove("fade-out");
+      menu.classList.add("fade-in");
+      body.classList.add("no-scroll");
+      closeIcon.classList.remove("d-none");
+      openIcon.classList.add("d-none");
+    }
+  });
+});
 
 const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+  "--marquee-elements-displayed"
+);
 const marqueeContent = document.querySelector("ul.marquee-content");
 
-
 if (screen.width <= 639) {
-    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+  root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 
-    for (let i = 0; i < marqueeElementsDisplayed; i++) {
-      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-    }
+  for (let i = 0; i < marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+  }
 }
 
-let randomNumber = (arr) => {
-    return Math.floor(Math.random() * arr.length); // function to get a random number in regards to the arr length passed into it
-}
+const wordArray = ["analysis", "tracking", "management"];
+let time = 10000
 
-const wordArray = ['analysis', 'tracking', 'management']
+let displayWords = (arr) => {
+  h2ctn.innerHTML = "";
+  h2ctn.innerHTML += `
+    <h2 class="flex flex-col items-center text-3xl font-bold heroSection__header">The fastest way for startups to do any <span class="animate-text fade-in-text">${arr[0]}</span></h2>
+    `;
 
-let getWord = () => {
-    h2ctn.innerHTML = ''
+  setTimeout(() => {
+    h2ctn.innerHTML = "";
     h2ctn.innerHTML += `
-    <h2 class="flex flex-col items-center text-3xl font-bold heroSection__header">The fastest way for startups to do any <span class="animate-text fade-in-text">${wordArray[randomNumber(wordArray)]}</span></h2>
-    
-    `
-}
+        <h2 class="flex flex-col items-center text-3xl font-bold heroSection__header">The fastest way for startups to do any <span class="animate-text fade-in-text">${arr[1]}</span></h2>
+        `;
+  }, 5000);
 
-getWord()
+  setTimeout(() => {
+    h2ctn.innerHTML = "";
+    h2ctn.innerHTML += `
+        <h2 class="flex flex-col items-center text-3xl font-bold heroSection__header">The fastest way for startups to do any <span class="animate-text fade-in-text">${arr[2]}</span></h2>
+        `;
+  }, 10000);
+};
 
-setInterval(getWord, 5000)
+displayWords(wordArray);
+
+setInterval(() => {
+  displayWords(wordArray);
+}, time * 1.6);
