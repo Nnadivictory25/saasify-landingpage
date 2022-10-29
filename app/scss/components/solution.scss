@@ -34,7 +34,7 @@
                 width: 125%            }
             img {
                 @include breakpoint-up(medium) {
-                    padding-top: rem(100);
+                    padding-top: rem(4);
                 }
                 padding-top: rem(50);
                 width: 110%;

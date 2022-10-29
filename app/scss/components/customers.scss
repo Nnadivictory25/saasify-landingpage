@@ -1,0 +1,48 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.customerSection {
+    background: var(--bg-gradient);
+    color: #fff;
+
+    &__bodyCtn {
+        .steps__ctn {
+            max-width: rem(435);
+            ul li{
+                margin-bottom: rem(27);
+
+                .stepNumber {
+                    color: var(--dark-blue);
+                }
+            } 
+        }
+
+        .videoCtn {
+            position: relative;
+
+            img {
+                opacity: .6;
+            }
+
+            svg {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: rem(60);
+                background-color: #fff;
+                border-radius: 100%;
+                padding: rem(10);
+                background-position: center;
+                @include transition;
+
+                &:hover {
+                    opacity: .85;
+                }
+            }
+        }
+    }
+}

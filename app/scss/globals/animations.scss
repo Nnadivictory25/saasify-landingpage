@@ -69,3 +69,9 @@
     transform: translateY(-15px);
     display: inline-block;
 }
+
+.hover {
+    &:hover {
+        opacity: .7;
+    }
+}

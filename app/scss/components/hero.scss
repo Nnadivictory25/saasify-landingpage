@@ -5,7 +5,7 @@
 .heroSection {
   position: relative;
   color: #fff;
-  background: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
+  background: var(--bg-gradient);
   height: 140vh;
   @include breakpoint-down(small) {
     height: 600px;

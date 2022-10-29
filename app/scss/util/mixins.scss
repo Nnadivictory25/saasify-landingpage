@@ -7,3 +7,7 @@
     padding-left: 27px;
 }
 
+@mixin transition {
+    transition: all .25s ease-in-out;
+}
+
