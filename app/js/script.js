@@ -5,6 +5,7 @@ const openIcon = document.querySelector("#open");
 const closeIcon = document.querySelector("#close");
 const headerText = document.querySelector(".animate-text");
 const h2ctn = document.querySelector(".h2Ctn");
+const mobileLinks = document.querySelectorAll(".mobileNavBtn");
 
 toggleMenu.forEach((button) => {
   button.addEventListener("click", () => {
@@ -27,6 +28,16 @@ toggleMenu.forEach((button) => {
   });
 });
 
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("fade-in");
+    body.classList.remove("no-scroll");
+    menu.classList.add("fade-out");
+    closeIcon.classList.add("d-none");
+    openIcon.classList.remove("d-none");
+  });
+});
+
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
   "--marquee-elements-displayed"
@@ -42,7 +53,7 @@ if (screen.width <= 639) {
 }
 
 const wordArray = ["analysis", "tracking", "management"];
-let time = 10000
+let time = 10000;
 
 let displayWords = (arr) => {
   h2ctn.innerHTML = "";
