@@ -7,7 +7,7 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
     list-style: none;
-    // outline: 1px solid red; // (For css debugging :) )
+    outline: 1px solid red; // (For css debugging :) )
 }
 
 body {
@@ -16,5 +16,4 @@ body {
     font-family: var(--primary-font);
     background-color: var(--white);
     overflow-x: hidden !important;
-    scroll-behavior: smooth;
 }

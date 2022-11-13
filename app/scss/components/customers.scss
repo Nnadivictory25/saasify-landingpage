@@ -9,9 +9,10 @@
 
     &__bodyCtn {
         .steps__ctn {
-            max-width: rem(435);
+            max-width: rem(443);
             ul li{
-                margin-bottom: rem(27);
+                margin-bottom: rem(35);
+                line-height: 1.3;
 
                 .stepNumber {
                     color: var(--dark-blue);
