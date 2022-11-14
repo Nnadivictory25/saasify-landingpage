@@ -21,9 +21,7 @@
 
          .left {
             button {
-                background: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
-                border-radius: 50px;
-                color: #fff;
+                @include ctaButton(var(--bg-gradient), #fff)
             }
          }
          

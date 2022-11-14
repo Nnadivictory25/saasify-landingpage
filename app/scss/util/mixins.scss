@@ -1,6 +1,7 @@
 @use '../util/breakpoints.scss' as *;
 @use '../util/functions.scss' as *;
 
+
 // This is where mixins will be created . 
 @mixin padding {
     padding-right: 27px;
@@ -9,5 +10,11 @@
 
 @mixin transition {
     transition: all .25s ease-in-out;
+}
+
+@mixin ctaButton($bg-color, $textColor) {
+    background: $bg-color;
+    color: $textColor;
+    border-radius: 50px;
 }
 

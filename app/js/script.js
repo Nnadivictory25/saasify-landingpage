@@ -81,3 +81,71 @@ displayWords(wordArray);
 setInterval(() => {
   displayWords(wordArray);
 }, time * 1.6);
+
+
+
+
+
+let monthlyActive = true
+const monthlySubBtn = document.querySelector('.monthly')
+const annuallySubBtn = document.querySelector('.annually')
+const span = document.querySelector('#priceSpan')
+const prices = document.querySelectorAll('.price')
+const switchBtns = [monthlySubBtn, annuallySubBtn]
+let percentageValues = []
+let amounts = []
+
+let calculatePercent = (percent, num) => {
+  return (percent / 100) * num;
+}
+
+let updateUI = (val1, val2, val3) => {
+  prices[0].innerHTML = `$${val1}`
+  prices[1].innerHTML = `$${val2}`
+  prices[2].innerHTML = `$${val3}`
+}
+
+
+prices.forEach(price => {
+  let amount = price.getAttribute('amount')
+  percentageValues.push(calculatePercent(20, amount))
+})
+
+
+prices.forEach(price => {
+  amounts.push(price.getAttribute('amount'))
+})
+
+
+let minusValues = () => {
+  for (let i = 0; i < 3; i++) {
+    amounts[i] -= percentageValues[i]
+  }
+}
+
+let addValues = () => {
+  for (let i = 0; i < 3; i++) {
+    amounts[i] += percentageValues[i]
+  }
+}
+
+
+switchBtns.map(button => {
+  button.addEventListener('click', (e) => {
+    if (monthlyActive && e.target !== switchBtns[0]) {
+      monthlySubBtn.classList.remove('active')
+      annuallySubBtn.classList.add('active')
+      span.style.left = '100px'
+      minusValues()
+      updateUI(amounts[0],amounts[1],amounts[2])
+      monthlyActive = !monthlyActive
+    } else if (!monthlyActive && e.target !== switchBtns[1]) {
+      monthlySubBtn.classList.add('active')
+      annuallySubBtn.classList.remove('active')
+      span.style.left = '5px'
+      addValues()
+      updateUI(amounts[0],amounts[1],amounts[2])
+      monthlyActive = !monthlyActive
+    }
+  })
+})
