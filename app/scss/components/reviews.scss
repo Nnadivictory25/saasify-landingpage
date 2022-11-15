@@ -1,0 +1,32 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.reviewsSection {
+
+    .swiper {
+        width: 100%;
+        max-width: rem(400);
+
+
+        .swiper-wrapper {
+
+            .swiper-slide{
+                background-color: rgb(255, 255, 255);
+              }
+            .card {
+                background-color: #fff !important;
+                border-radius: 15px;
+                outline: 1px solid var(--dark-blue);
+                box-shadow: 0px 0px 50px rgba(44, 43, 43, 0.07);
+
+                .starsCtn {
+                    i {
+                        color: var(--dark-blue);
+                    }
+                }
+            }
+        }
+    }
+}

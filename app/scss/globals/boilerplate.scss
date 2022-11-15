@@ -3,6 +3,7 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth !important;
     overflow-x: hidden !important;
+    
 }
 
 *, *::before, *::after {
@@ -16,5 +17,5 @@ body {
     padding: 0;
     font-family: var(--primary-font);
     background-color: var(--white);
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }

@@ -24,6 +24,9 @@
   <!-- tailwind css -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- swiperJs css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
 
@@ -145,7 +148,7 @@
         <section id="solution" class="solution px-5 mt-5">
             <div class="solution__container container place-content-center place-items-center justify-center mx-auto grid md:grid-cols-2">
                 <div class="left container my-auto md:px-8 md:mx-5 md:pt-2">
-                    <h4 class="leading-10 text-3xl py-3 md:px-5 font-bold pt-8 lg:pt-0">Powerful and easy to use SaaS platform</h4>
+                    <h4 class="leading-10 text-3xl py-3 md:px-5 font-bold pt-8 lg:pt-0 capitalize">Powerful and easy to use SaaS platform</h4>
                     <p class="mt-3 md:px-5 py-3 font-semibold opacity-75">Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture and contact leads at the opportune time to maximize.</p>
                     <button class="md:mx-4 font-bold m-3 uppercase rounded-full px-6 py-3 hover:opacity-75">get started</button>
                 </div>
@@ -157,7 +160,7 @@
 
         <section id="customer" class="customerSection py-4 px-7  pt-8 pb-[50px]">
             <div class="customerSection__headerCtn lg:flex justify-between align-center lg:px-8 lg:pt-8 lg:mt-3 lg:mr-8">
-                <h2 class="text-3xl font-bold mb-9 lg:mb-0 lg:mx-9 lg:px-8">Work smarter <br> with easy access for user</h2>
+                <h2 class="text-3xl font-bold mb-9 lg:mb-0 lg:mx-9 lg:px-8 capitalize">Work smarter <br> with easy access for user</h2>
                 <div class="btnctn self-end">
                     <button class="capitalize rounded-full hover border-transparent mr-8 pr-8 bg-white py-3 px-6 text-black font-semibold">Get started now</button>
                 </div>
@@ -201,8 +204,8 @@
 
         </section>
 
-        <section id="pricing" class="pricingSection px-8 padding-sides">
-            <h2 class="pricingSection__header text-3xl md:text-4xl font-bold text-center mt-8 mb-7">Get results first, Pick a plan later.</h2>
+        <section id="pricing" class="pricingSection px-8 padding-sides mb-8 pb-8">
+            <h2 class="pricingSection__header text-3xl md:text-4xl font-bold text-center mt-8 mb-7 capitalize">Get results first, Pick a plan later.</h2>
 
             <div class="switchComponentstn container mx-auto pt-8 mt-4">
                 <div class="planSwitchBtnCtn flex gap-x-8 py-2 px-5 rounded-full">
@@ -219,7 +222,7 @@
 
 
 
-            <div class="pricingSection__pricingCardsCtn mt-8 mb-5 gap-x-6 flex flex-wrap lg:mx-8 justify-center">
+            <div class="pricingSection__pricingCardsCtn mt-8 mb-4 gap-x-6 flex flex-wrap lg:mx-8 justify-center">
                 <div class="pricingCard">
                     <div class="upperCardPart">
                         <h3 class="cardHeader">Pro</h3>
@@ -329,9 +332,110 @@
                 
             </div>
         </section>
+
+        <section id="reviews" class="reviewsSection px-8 padding-sides" >
+            <h2 class="text-3xl font-bold md:text-4xl text-center pb-5 capitalize">What people are saying about us</h2>
+            <p class="text-center mt-3 text-xs">swipe to see more</p>
+
+            <div class="swiper reviewsSection__swiper mt-7 mb-5">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide py-8 px-6">
+                        <div class="starsCtn px-3 py-8">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review font-semibold px-5 py-8">
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus officia repudiandae molestias eaque vel sunt. "
+                        </p>
+                        <div class="card__footer align-center flex gap-x-6 py-2">
+                            <div class="imgCtn">
+                                <img class="rounded-full outline-slate-100 outline" src="/images/reviewer1.png" alt="">
+                            </div>
+                            <div class="nameCtn">
+                                <p class="name font-bold ">Kartik Bansal</p>
+                                <p class="location text-xs">Kota, Rajasthan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide py-8 px-6">
+                        <div class="starsCtn px-3 py-7">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="review font-semibold px-5 py-8">
+                           " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus officia repudiandae molestias eaque vel sunt. "
+                        </p>
+                        <div class="card__footer align-center flex gap-x-6 py-2">
+                            <div class="imgCtn">
+                                <img class="rounded-full outline-slate-100 outline" src="/images/reviwer2.png" alt="">
+                            </div>
+                            <div class="nameCtn">
+                                <p class="name font-bold ">Anil Dvivedi</p>
+                                <p class="location text-xs">New Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide py-8 px-6">
+                        <div class="starsCtn px-3 py-7">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review font-semibold px-5 py-8">
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus officia repudiandae molestias eaque vel sunt. "
+                        </p>
+                        <div class="card__footer align-center flex gap-x-6 py-2">
+                            <div class="imgCtn">
+                                <img class="rounded-full outline-slate-100 outline" src="/images/reviwer3.png" alt="">
+                            </div>
+                            <div class="nameCtn">
+                                <p class="name font-bold ">Srijan Sirasikar</p>
+                                <p class="location text-xs">Bhadrak</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+             
+        </footer>
         
 
     </main>
 
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper(".reviewsSection__swiper", {
+          effect: "cards",
+          grabCursor: true,
+          loop: true,
+        });
+        setTimeout(() => {
+            setInterval(() => {
+                swiper.slideNext();
+            }, 6000);
+        }, 3000);
+      </script>
 </body>
 </html>
