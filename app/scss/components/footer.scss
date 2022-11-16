@@ -1,0 +1,42 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+#footer {
+    background-color: var(--dim-dark-blue);
+    color: #fff;
+
+    .btnCtn {
+        @include whiteLine;
+    }
+
+    .footer__linksCtn {
+        
+
+
+        .otherLinksCtn {
+            margin-top: rem(30);
+            ul {
+                @include breakpoint-down(small) {
+                    margin-top: 25px;
+                }
+
+                .header {
+                    font-weight: 600;
+                    font-size: .92rem;
+                }
+
+
+                &:last-child {
+                    @include breakpoint-down(small) {
+                        margin-left: rem(40);
+                    }
+                }
+            }
+        }
+    }
+        .footer_last {
+            border-top: 1px solid #fff;
+        }
+}

@@ -2,6 +2,10 @@
 @use "../util/functions.scss" as *;
 @use "../util/mixins.scss" as *;
 
+
+.whiteBgBtn {
+  @include ctaButton(#fff, var(--dark-blue));
+}
 .pricingSection {
   .active {
     color: #fff !important;
