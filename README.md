@@ -3,11 +3,11 @@ Building a landing page (sassify)
 Basically a full-fledged landing page built with tailwind CSS ,SCSS and JavaScript
 
 - super responsive
-- animations
+- animations 
 - Js advanced DOM manipulations
 
 # preview
-![NFT Landing Page](https://user-images.githubusercontent.com/71198309/202300350-8c96627b-0a53-45d8-895e-ccda63dd2aa0.jpg)
+![Screenshot](https://user-images.githubusercontent.com/71198309/202300350-8c96627b-0a53-45d8-895e-ccda63dd2aa0.jpg)
 
 # live link
 https://saasify-landingpage.vercel.app/
