@@ -1,9 +1,9 @@
 # saasify-landingpage
 Building a landing page (sassify)
-Basically a full-fledged landing page built with tailwind CSS ,SCSS and JavaScript
+Basically a full-fledged landing page built with tailwind CSS , SCSS and JavaScript
 
-- super responsive
-- animations 
+- Super responsive
+- Animations 
 - Js advanced DOM manipulations
 
 # preview
